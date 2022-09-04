@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    $cart = array();
+
+    
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -30,6 +38,7 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
 
+
 </head>
 
 <?php
@@ -60,24 +69,18 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav  mx-auto ">
-                                <li class="nav-item active">
+                                <!-- <li class="nav-item active">
                                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="menu.php">Menu</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="about.php">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="book.php">Book Table</a>
-                                </li>
+                                </li> -->
                             </ul>
                             <div class="user_option">
                                 <a href="" class="user_link">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </a>
-                                <a class="cart_link" href="#">
+                                <a class="cart_link" href="../view_cart.php">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                         <g>
                                             <g>
@@ -136,7 +139,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </button>
                                 </form>
-                                <a href="" class="order_online">
+                                <a href="../index.php#shop" class="order_online">
                                     Order Online
                                 </a>
                             </div>
@@ -172,24 +175,18 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav  mx-auto ">
-                                        <li class="nav-item">
+                                        <!-- <li class="nav-item">
                                             <a class="nav-link" href="index.php">Home </a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="menu.php">Menu <span class="sr-only">(current)</span> </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="about.php">About</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="book.php">Book Table</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                     <div class="user_option">
                                         <a href="" class="user_link">
                                             <i class="fa fa-user" aria-hidden="true"></i>
                                         </a>
-                                        <a class="cart_link" href="#">
+                                        <a class="cart_link" href="../view_cart.php">
                                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                                 <g>
                                                     <g>
@@ -248,7 +245,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </button>
                                         </form>
-                                        <a href="" class="order_online">
+                                        <a href="../index.php#shop" class="order_online">
                                             Order Online
                                         </a>
                                     </div>

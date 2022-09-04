@@ -1,4 +1,5 @@
 <?php require("includes/header.inc.php"); ?>
+
     <!-- slider section -->
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
@@ -237,11 +238,11 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Buy our secret protector
+          Buy our secret protectors
         </h2>
       </div>
 
-      <ul class="filters_menu">
+      <ul class="filters_menu" id="shop">
         <li class="active" data-filter="*">All</li>
         <li data-filter=".covid">COVID-19 Edition</li>
         <li data-filter=".eye">Eye Cover</li>
@@ -268,8 +269,8 @@
                     <h6>
                       $20
                     </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <a id="mask1">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -321,6 +322,7 @@
                         <g>
                         </g>
                       </svg>
+
                     </a>
                   </div>
                 </div>
@@ -939,7 +941,7 @@
       </div>
       <div class="btn-box">
         <a href="">
-          View More
+          View Cart
         </a>
       </div>
     </div>
