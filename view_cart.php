@@ -1,16 +1,16 @@
 <?php 
-    session_start();
     require('./includes/header.inc.php'); 
 ?>
 
 <div class="filters-content">
         <div class="row grid">
         <?php
-            foreach(){
+            var_dump($_POST);
+            // foreach(){
 
-                ?>
+            //     ?>
 
-        <div class="col-sm-6 col-lg-4 all">
+        <div class="col-sm-6 col-lg-4">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -86,10 +86,10 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
 
-            <?php
-            }
+        <?php
+            // }
         ?>
           
         </div>
