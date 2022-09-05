@@ -1,26 +1,6 @@
 <?php
     session_start();
 
-    /*
-    
-        [
-            [
-            "item_id" => 1, 
-            "item_name"=> "asd", 
-            "qty"=> 1
-            ],[
-            "item_id" => 1, 
-            "item_name"=> "asd", 
-            "qty"=> 1
-            ],[
-            "item_id" => 1, 
-            "item_name"=> "asd", 
-            "qty"=> 1
-            ],
-        ]
-    
-    */
-
     if(!isset($_SESSION['cart'])){
         $_SESSION['cart'] = array();
     }
@@ -44,9 +24,7 @@
 
                 break;
             }
-
             $index += 1;
-
         }
 
         if($available){
@@ -57,8 +35,10 @@
 
         }
 
-
-
+    } else if (isset($_POST) && $_POST['action'] === "empty_cart"){
+        unset($_SESSION['cart']);
+        $_SESSION['cart'] = array();
     }
+
 
 ?>

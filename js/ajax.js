@@ -151,3 +151,21 @@ $("#mask2").on("click", () => {
       },
     });
   });
+
+
+  $("#emptycart").on("click", () => {
+    $.ajax({
+      type: "POST",
+      url: "../controller/cartController.php",
+      data: "action=empty_cart",
+      success: () => {
+        Swal.fire({
+          position: "top-end",
+          icon: "warning",
+          title: "Cart have been emptied!",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      },
+    });
+  });
