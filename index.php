@@ -16,7 +16,7 @@
                       We care about your secret
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="btn1">
                         Shop Now
                       </a>
                     </div>
@@ -252,7 +252,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask1.png" alt="">
+                  <img src="./images/mask1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -329,7 +329,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask2.png" alt="">
+                  <img src="./images/mask2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -405,7 +405,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask3.png" alt="">
+                  <img src="./images/mask3.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -481,7 +481,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask4.png" alt="">
+                  <img src="./images/mask4.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -557,7 +557,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask5.png" alt="">
+                  <img src="./images/mask5.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -633,7 +633,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask6.png" alt="">
+                  <img src="./images/mask6.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -709,7 +709,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask7.png" alt="">
+                  <img src="./images/mask7.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -785,7 +785,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask8.png" alt="">
+                  <img src="./images/mask8.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -861,7 +861,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mask9.png" alt="">
+                  <img src="./images/mask9.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -990,7 +990,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form method="POST" action="./controller/custom_mask.php" enctype="multipart/form-data">
+            <form method="POST" action="./controller/maskController.php" enctype="multipart/form-data">
               <div>
                 <input type="text" class="form-control" placeholder="Your Name" />
               </div>

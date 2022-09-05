@@ -51,7 +51,7 @@
 
         if($available){
 
-            $item_add = ["item_id"=>$item_id, "item_name"=>$item_name, "qty"=>qty];
+            $item_add = ["item_id"=>$item_id, "item_name"=>$item_name, "qty"=>$qty];
 
             array_push($_SESSION['cart'], $item_add);
 

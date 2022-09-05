@@ -136,9 +136,18 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </button>
                                 </form> -->
-                                <a href="../<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">
-                                    Shop Now
-                                </a>
+                                <?php
+                                    if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
+                                       ?>
+                                       <a href="/view_cart.php" class="order_online">View Cart</a>
+                                       <?php
+                                    } else {
+                                        ?>
+                                        <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">Shop Now</a>
+                                        <?php
+                                    }
+                                ?>
+                                
                             </div>
                         </div>
                     </nav>
@@ -242,7 +251,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </button>
                                         </form> -->
-                                        <a href="../<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">
+                                        <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">
                                             Order Online
                                         </a>
                                     </div>
