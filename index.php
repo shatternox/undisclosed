@@ -17,7 +17,7 @@
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Order Now
+                        Shop Now
                       </a>
                     </div>
                   </div>
@@ -100,7 +100,7 @@
                   <span>20%</span> Off
                 </h6>
                 <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http:2www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
                         <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -229,10 +229,6 @@
       </div>
     </div>
   </section> -->
-
-  <!-- end offer section -->
-
-  <!-- food section -->
 
   <section class="food_section layout_padding-bottom layout_padding-top">
     <div class="container">
@@ -1026,9 +1022,6 @@
       </div>
     </div>
   </section>
-  <!-- end book section -->
-
-  <!-- client section -->
 
   <section class="client_section layout_padding-bottom">
     <div class="container">
@@ -1053,7 +1046,7 @@
                 </p>
               </div>
               <div class="img-box">
-                <img src="images/stanley.jpg" alt="" class="box-img">
+                <img src="./images/stanley.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -1071,7 +1064,7 @@
                 </p>
               </div>
               <div class="img-box">
-                <img src="images/discordmod.jpg" alt="" class="box-img">
+                <img src="./images/discordmod.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>

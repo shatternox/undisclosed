@@ -1,8 +1,5 @@
 <?php
     session_start();
-    $cart = array();
-
-    
 
 ?>
 
@@ -24,19 +21,19 @@
     <title> Undisclosed </title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 
     <!--owl slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- nice select  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
     <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
 
 
 </head>
@@ -51,7 +48,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
 
         <div class="hero_area">
             <div class="bg-box">
-                <img src="images/hero-bg.jpg" alt="">
+                <img src="../images/hero-bg.jpg" alt="">
             </div>
             <!-- header section strats -->
             <header class="header_section">
@@ -77,9 +74,9 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                 </li> -->
                             </ul>
                             <div class="user_option">
-                                <a href="" class="user_link">
+                                <!-- <a href="" class="user_link">
                                     <i class="fa fa-user" aria-hidden="true"></i>
-                                </a>
+                                </a> -->
                                 <a class="cart_link" href="../view_cart.php">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                         <g>
@@ -134,13 +131,13 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         </g>
                                     </svg>
                                 </a>
-                                <form class="form-inline">
+                                <!-- <form class="form-inline">
                                     <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </button>
-                                </form>
-                                <a href="../index.php#shop" class="order_online">
-                                    Order Online
+                                </form> -->
+                                <a href="../<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">
+                                    Shop Now
                                 </a>
                             </div>
                         </div>
@@ -157,7 +154,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
 
                 <div class="hero_area">
                     <div class="bg-box">
-                        <img src="images/hero-bg.jpg" alt="">
+                        <img src="../images/hero-bg.jpg" alt="">
                     </div>
                     <!-- header section strats -->
                     <header class="header_section">
@@ -183,9 +180,9 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         </li> -->
                                     </ul>
                                     <div class="user_option">
-                                        <a href="" class="user_link">
+                                        <!-- <a href="" class="user_link">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                        </a>
+                                        </a> -->
                                         <a class="cart_link" href="../view_cart.php">
                                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                                 <g>
@@ -240,12 +237,12 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                                 </g>
                                             </svg>
                                         </a>
-                                        <form class="form-inline">
+                                        <!-- <form class="form-inline">
                                             <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </button>
-                                        </form>
-                                        <a href="../index.php#shop" class="order_online">
+                                        </form> -->
+                                        <a href="../<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">
                                             Order Online
                                         </a>
                                     </div>

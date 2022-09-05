@@ -1,5 +1,5 @@
 <?php
 
-    die("SQL Error!")
+    die("SQL Error!");
 
 ?>
