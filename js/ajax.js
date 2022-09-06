@@ -214,7 +214,7 @@ $("#mask2").on("click", (e) => {
       type: "POST",
       url: "../controller/cartController.php",
       data: "action=checkout",
-      success: () => {
+      success: (res) => {
         Swal.fire({
           position: "center",
           icon: "success",
@@ -222,8 +222,13 @@ $("#mask2").on("click", (e) => {
           showConfirmButton: false,
           timer: 1500,
         }).then((result)=>{
-          window.location = "index.php"
+          window.location = "order.php?id="+res
         });
       },
     });
   });
+
+
+
+
+
