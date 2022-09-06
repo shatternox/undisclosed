@@ -10,6 +10,8 @@
         
         $item_id = $_POST['item_id'];
         $item_name = $_POST['item_name'];
+        $item_price = $_POST['item_price'];
+        $item_desc = $_POST['item_desc'];
         $qty = $_POST['qty'];
 
         $available = true;
@@ -29,7 +31,7 @@
 
         if($available){
 
-            $item_add = ["item_id"=>$item_id, "item_name"=>$item_name, "qty"=>$qty];
+            $item_add = ["item_id"=>$item_id, "item_name"=>$item_name, "item_price"=>$item_price, "item_desc"=>$item_desc, "qty"=>$qty];
 
             array_push($_SESSION['cart'], $item_add);
 

@@ -1,14 +1,20 @@
 <?php 
     require('./includes/header.inc.php'); 
+
+    if(empty($_SESSION['cart'])){
+      ?>
+      <script>document.location="index.php"</script>
+      <?php
+    }
 ?>
 
 <div class="filters-content">
         <div class="row grid">
         <?php
             var_dump($_POST);
-            // foreach(){
+            foreach($_SESSION['cart'] as $item){
 
-            //     ?>
+            ?>
 
         <div class="col-sm-6 col-lg-4">
             <div class="box">
@@ -18,16 +24,16 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Secret Protector 50%
+                    <?= $item['item_name']; ?>
                   </h5>
                   <p>
-                    Protect your secrecy with 50% efficiency
+                    <?= $item['item_desc']; ?>
                   </p>
                   <div class="options">
                     <h6>
-                      $20
+                      $<?= $item['item_price']; ?>
                     </h6>
-                      <a id="mask1">
+                      <a id="mask<?= $item['item_id']; ?>">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
@@ -89,14 +95,11 @@
         </div>
 
         <?php
-            // }
+            }
         ?>
           
         </div>
       </div>
-
-
-
 
 
 <?php require('./includes/footer.inc.php'); ?>

@@ -2,7 +2,7 @@ $("#mask1").on("click", () => {
   $.ajax({
     type: "POST",
     url: "../controller/cartController.php",
-    data: "item_id=1&item_name=Secret Protector 50%&qty=1&action=add_to_cart",
+    data: "item_id=1&item_name=Secret Protector 50%&item_price=20&item_desc=Protect your secrecy with 50% efficiency&qty=1&action=add_to_cart",
     success: () => {
       Swal.fire({
         position: "top-end",
@@ -20,7 +20,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=2&item_name=Secret Protector 20%&qty=1&action=add_to_cart",
+      data: "item_id=2&item_name=Secret Protector 20%&item_price=15&item_desc=Protect your secrecy with 20% efficiency&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -37,7 +37,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=3&item_name=Hackerman 100%&qty=1&action=add_to_cart",
+      data: "item_id=3&item_name=Hackerman 100%&item_price=9999&item_desc=No one will ever know your secret&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -54,7 +54,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=4&item_name=Classic 45%&qty=1&action=add_to_cart",
+      data: "item_id=4&item_name=Classic 45%&item_price=18&item_desc=Protect your secrecy with 45% efficiency&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -71,7 +71,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=5&item_name=Classic 40%&qty=1&action=add_to_cart",
+      data: "item_id=5&item_name=Classic 40%&item_price=10&item_desc=Protect your secrecy with 40% efficiency&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -88,7 +88,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=6&item_name=The Anti-social&qty=1&action=add_to_cart",
+      data: "item_id=6&item_name=The Anti-social&item_price=1&item_desc=No one would even want to know you&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -105,7 +105,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=7&item_name=Apocalyptic Mask 98%&qty=1&action=add_to_cart",
+      data: "item_id=7&item_name=Apocalyptic Mask 98%&item_price=150&item_desc=Protect your secrecy with 98% efficiency&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -122,7 +122,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=8&item_name=The Developer Mask 90%&qty=1&action=add_to_cart",
+      data: "item_id=8&item_name=The Developer Mask 90%&item_price=50&item_desc=A little smelly but quite effective&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
@@ -139,7 +139,7 @@ $("#mask2").on("click", () => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=9&item_name=The Robbing Hood -99%&qty=1&action=add_to_cart",
+      data: "item_id=9&item_name=The Robbing Hood -99%&item_price=30&item_desc=You will attract everyone's attention&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "top-end",
