@@ -40,6 +40,11 @@
     } else if (isset($_POST) && $_POST['action'] === "empty_cart"){
         unset($_SESSION['cart']);
         $_SESSION['cart'] = array();
+    } else if (isset($_POST) && $_POST['action'] === "checkout"){
+        unset($_SESSION['cart']);
+        $_SESSION['cart'] = array();
+
+
     }
 
 

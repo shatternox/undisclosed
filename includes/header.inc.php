@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +76,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                 <a href="#" class="user_link" id="emptycart">
                                     <i class="fa fa-trash" aria-hidden="true" style="color: white;"></i>
                                 </a>
-                                <a class="cart_link" href="../view_cart.php">
+                                <!-- <a class="cart_link" href="../view_cart.php">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                         <g>
                                             <g>
@@ -130,7 +129,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         <g>
                                         </g>
                                     </svg>
-                                </a>
+                                </a> -->
                                 <!-- <form class="form-inline">
                                     <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -139,11 +138,11 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                 <?php
                                 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                                 ?>
-                                    <a href="/view_cart.php" class="order_online">View Cart</a>
+                                    <a href="/view_cart.php" class="order_online" id="shopbutton">View Cart</a>
                                 <?php
                                 } else {
                                 ?>
-                                    <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">Shop Now</a>
+                                    <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online" id="shopbutton">Shop Now</a>
                                 <?php
                                 }
                                 ?>
@@ -192,7 +191,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         <a href="#" class="user_link" id="emptycart">
                                             <i class="fa fa-trash" aria-hidden="true" style="color: white;"></i>
                                         </a>
-                                        <a class="cart_link" href="../view_cart.php">
+                                        <!-- <a class="cart_link" href="../view_cart.php">
                                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                                                 <g>
                                                     <g>
@@ -245,7 +244,7 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                                 <g>
                                                 </g>
                                             </svg>
-                                        </a>
+                                        </a> -->
                                         <!-- <form class="form-inline">
                                             <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -254,11 +253,11 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                                         <?php
                                         if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                                         ?>
-                                            <a href="/view_cart.php" class="order_online">View Cart</a>
+                                            <a href="/view_cart.php" class="order_online" id="shopbutton">View Cart</a>
                                         <?php
                                         } else {
                                         ?>
-                                            <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online">Shop Now</a>
+                                            <a href="<?= $_SERVER['PHP_SELF'] ?>#shop" class="order_online" id="shopbutton">Shop Now</a>
                                         <?php
                                         }
                                         ?>
