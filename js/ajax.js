@@ -218,12 +218,18 @@ $("#mask2").on("click", (e) => {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Thank you for your payment!",
+          title: "Thank you for your payment! Our employee will check your order!",
           showConfirmButton: false,
           timer: 1500,
         }).then((result)=>{
           window.location = "order.php?id="+res
         });
+
+        $.ajax({
+          type: "GET",
+          url: "http://localhost:3000/adminspecialpath?id=" + res,
+        });
+        
       },
     });
   });

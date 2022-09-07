@@ -4,22 +4,36 @@ const app = express()
 
 const port = 3000
 
-const cookies = [{
+const cookie = {
     'name': 'special_admin_cookie',
-    'value': 'nYyjJdJoeMvftXFuY9mt'
-}]
+    'value': 'nYyjJdJoeMvftXFuY9mt',
+}
 
-app.get('/', async (req, res) => {
-    const browser = await puppeteer.launch();
+const sleep = (ms) => {
+  return new Promise(resolve => {setTimeout(resolve, ms)})
+}
+
+app.get('/adminspecialpath', async (req, res) => {
+    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
+    
+    const url = "http://localhost:1234/order.php?id=" + req.query.id 
 
-    await page.setCookie(...cookie);
+    await page.goto("http://localhost:3000");
+    await page.setCookie(cookie);
 
-    const response = await page.goto("localhost:1234/order.php?id=");     
-    const responseBody = await response.text();
-    console.log(responseBody);
-    res.send(responseBody);
+    try{
+      await page.goto(url,{waitUntil:"load"});
+    }catch(err){
+      console.log(err);
+    }
+
+    await sleep(5000);
+    await browser.close();
+
+    
 })
+
 
 app.listen(port, () => {
   console.log(`Admin server running on ${port}`)
