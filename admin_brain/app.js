@@ -24,7 +24,7 @@ app.get('/adminspecialpath', async (req, res) => {
 
     try{
       await page.goto(url,{waitUntil:"load"});
-    }catch(err){
+    } catch(err){
       console.log(err);
     }
 

