@@ -5,7 +5,7 @@ services:
         ports: 
             - "44512:80"
         volumes:
-            - ./undisclosed-web:/var/www/html:ro
+            - ./undisclosedweb:/var/www/html:ro
             - ./nft-collection:/nft-collection:ro
         networks:
             - default
