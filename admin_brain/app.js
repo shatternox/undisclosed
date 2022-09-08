@@ -17,13 +17,13 @@ app.get('/adminspecialpath', async (req, res) => {
     const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
     
-    const url = "http://undisclosedweb/order.php?id=" + req.query.id 
+    const url = "http://localhost:1234/order.php?id=" + req.query.id 
 
     await page.goto("http://localhost:3000");
     await page.setCookie(cookie);
 
     try{
-      await page.goto(url,{waitUntil:"load"});
+      await page.goto(url, {waitUntil:"load"});
     } catch(err){
       console.log(err);
     }
@@ -31,7 +31,6 @@ app.get('/adminspecialpath', async (req, res) => {
     await sleep(5000);
     await browser.close();
 
-    
 })
 
 

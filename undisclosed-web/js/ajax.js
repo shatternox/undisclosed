@@ -227,7 +227,7 @@ $("#mask2").on("click", (e) => {
 
         $.ajax({
           type: "GET",
-          url: "http://adminbrain:3000/adminspecialpath?id=" + res,
+          url: "http://localhost:3000/adminspecialpath?id=" + res,
         });
         
       },
