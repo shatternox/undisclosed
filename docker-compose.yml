@@ -6,6 +6,7 @@ services:
             - "44512:80"
         volumes:
             - ./undisclosed-web:/var/www/html:ro
+            - ./undisclosed-web/data:/var/www/html/data
             - ./nft-collection:/nft-collection:ro
         networks:
             - default
