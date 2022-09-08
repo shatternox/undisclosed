@@ -4,7 +4,6 @@ RUN apt-get update
 RUN apt-get install -y \
     fonts-liberation \
     gconf-service \
-    libappindicator1 \
     libasound2 \
     libatk1.0-0 \
     libcairo2 \
