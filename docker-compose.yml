@@ -1,0 +1,22 @@
+version: "3.1"
+services:
+    undisclosedweb:
+        build: .
+        ports: 
+            - "44512:80"
+        volumes:
+            - ./undisclosed-web:/var/www/html:ro
+            - ./nft-collection:/nft-collection:ro
+        networks:
+            - default
+    
+    adminbrain:
+        build: ./admin_brain
+        ports:
+            - 39981:3000
+volumes:
+    persistent:
+
+
+
+

@@ -20,11 +20,8 @@
         die("Dont be naughty!");
     }
 
-
     $data_raw = file_get_contents("./data/".$data_to_read);
     $data_readable = json_decode($data_raw);
-
-    // var_dump($data_readable[0]->item_id);
     
 ?>
 
