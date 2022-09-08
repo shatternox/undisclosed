@@ -227,7 +227,7 @@ $("#mask2").on("click", (e) => {
 
         $.ajax({
           type: "GET",
-          url: "http://localhost:3000/adminspecialpath?id=" + res,
+          url: "http://172.16.47.15:3000/adminspecialpath?id=" + res,
         });
         
       },

@@ -17,9 +17,9 @@ app.get('/adminspecialpath', async (req, res) => {
     const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
     const page = await browser.newPage();
     
-    const url = "http://localhost:1234/order.php?id=" + req.query.id 
+    const url = "http://172.16.47.14:1234/order.php?id=" + req.query.id 
 
-    await page.goto("http://localhost:3000");
+    await page.goto("http://172.16.47.15:3000");
     await page.setCookie(cookie);
 
     try{
