@@ -99,5 +99,4 @@ if (empty($_SESSION['cart'])) {
 
 
 
-
 <?php require('./includes/footer.inc.php'); ?>
