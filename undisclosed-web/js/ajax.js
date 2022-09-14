@@ -224,11 +224,6 @@ $("#mask2").on("click", (e) => {
         }).then((result)=>{
           window.location = "order.php?id="+res
         });
-
-        $.ajax({
-          type: "GET",
-          url: "http://172.16.47.15:3000/adminspecialpath?id=" + res,
-        });
         
       },
     });

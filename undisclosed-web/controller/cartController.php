@@ -45,16 +45,15 @@ if (isset($_POST) && $_POST['action'] === "add_to_cart") {
 } else if (isset($_POST) && $_POST['action'] === "checkout") {
     
     $filename = sha1(uniqid());
-    
+
     $file = fopen("../data/". $filename, "w") or die("Fail to open file");
     fwrite($file, json_encode($_SESSION['cart']));
     
     unset($_SESSION['cart']);
     $_SESSION['cart'] = array();
-    echo $filename;
 
-    ?>
-
-    <?php
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'http://172.16.47.15:3000/adminspecialpath?id=' . $filename);
+    curl_exec($ch);
 
 }

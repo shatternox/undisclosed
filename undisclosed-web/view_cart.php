@@ -98,4 +98,6 @@ if (empty($_SESSION['cart'])) {
 </section>
 
 
+
+
 <?php require('./includes/footer.inc.php'); ?>
