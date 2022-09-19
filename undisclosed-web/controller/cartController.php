@@ -53,7 +53,9 @@ if (isset($_POST) && $_POST['action'] === "add_to_cart") {
     $_SESSION['cart'] = array();
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'http://172.16.47.15:3000/adminspecialpath?id=' . $filename);
+
+    // For Docker 172.16.47.15:3000
+    curl_setopt($ch, CURLOPT_URL, 'http://localhost:3000/adminspecialpath?id=' . $filename);
     curl_exec($ch);
 
 }
