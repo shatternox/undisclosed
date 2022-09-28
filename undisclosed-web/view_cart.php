@@ -89,7 +89,7 @@ if (empty($_SESSION['cart'])) {
     <div class="text-center font-weight-bolder">Total price: $<?php echo $totalprice; ?></div>
     
     <div class="btn-box">
-      <a id="checkout">
+      <a id="checkout" href="#">
         Pay now
       </a>
     </div>
