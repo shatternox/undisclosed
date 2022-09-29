@@ -146,12 +146,12 @@ $("#mask2").on("click", (e) => {
     $.ajax({
       type: "POST",
       url: "../controller/cartController.php",
-      data: "item_id=8&item_name=The Developer Mask 90%&item_price=50&item_desc=A little smelly but quite effective&qty=1&action=add_to_cart",
+      data: "item_id=8&item_name=The Beauty Mask&item_price=50&item_desc=Kinda scary of you ask me&qty=1&action=add_to_cart",
       success: () => {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "The Developer Mask 90% added to cart",
+          title: "The Beauty Mask added to cart",
           showConfirmButton: false,
           timer: 1500,
         });

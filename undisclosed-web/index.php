@@ -590,10 +590,10 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    The Developer Mask 90%
+                    The Beauty Mask
                   </h5>
                   <p>
-                    A little smelly but quite effective
+                    Kinda scary of you ask me
                   </p>
                   <div class="options">
                     <h6>
