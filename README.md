@@ -1,2 +1,2 @@
 # undisclosed-
-Web Exploitation - Medium - CSCCTF 2022
+Web Exploitation - Medium / Hard - NCW22 CTF
