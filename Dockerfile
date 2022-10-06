@@ -11,7 +11,6 @@ RUN useradd ctfplayer --password J822yl8#KvR09c%wYWxfb$9Ti
 
 USER ctfplayer
 
-RUN service apache2 restart 
 
 
 
