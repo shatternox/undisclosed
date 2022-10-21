@@ -58,10 +58,10 @@ app.get('/adminspecialpath', async (req, res) => {
     });
 
 
-    // For Docker 172.16.47.14:80
-    const url = "http://172.16.47.14/order.php?id=" + req.query.id 
+    // For Docker 172.12.47.14:80
+    const url = "http://undisclosedweb/order.php?id=" + req.query.id 
 
-    await page.goto("http://172.16.47.14/");
+    await page.goto("http://undisclosedweb/");
     await page.setCookie(cookie);
 
     try{
