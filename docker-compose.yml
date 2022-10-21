@@ -11,7 +11,7 @@ services:
       - ./config/php.ini:/usr/local/etc/php/conf.d/local.ini:ro
     networks:
       mynet:
-        ipv4_address: 172.12.47.14
+        ipv4_address: 10.10.47.14
 
   adminbrain:
     build: ./admin_brain
@@ -19,7 +19,7 @@ services:
       - 39981:3000
     networks:
       mynet:
-        ipv4_address: 172.12.47.15
+        ipv4_address: 10.10.47.15
 
 
 volumes:
@@ -31,4 +31,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.12.47.0/24
+        - subnet: 10.10.47.0/24
